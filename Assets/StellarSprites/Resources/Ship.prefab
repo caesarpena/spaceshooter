@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1335445816159724}
+  m_IsPrefabParent: 1
+--- !u!1 &1335445816159724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4209160207536324}
+  - component: {fileID: 114014535235124482}
+  - component: {fileID: 114503219659102716}
+  - component: {fileID: 50804182011534890}
+  m_Layer: 0
+  m_Name: Ship
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4209160207536324
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335445816159724}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -1.88, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!50 &50804182011534890
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335445816159724}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &114014535235124482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335445816159724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888be48631c7fdf4cac6b2881425a620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvailableBodyLengths: 200000003000000040000000
+  CustomSeed: 0
+  Seed: 15444053
+  CustomShipType: 0
+  ShipType: 2
+  CustomColorBody: 1
+  CustomColorHighlight: 1
+  CustomColorEngine: 1
+  Colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.13103437, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.2965517, a: 1}
+  CustomColorDetail: 0
+  ColorDetail: 0.10220823
+  CustomBodyDetail: 0
+  BodyDetail: 0.081623554
+  CustomBodyLength: 0
+  BodyLength: 32
+  CustomWingDetail: 0
+  WingDetail: 0.06617499
+  AdvancedOptions: 1
+  PolygonCollider: 1
+  EngineExhaust: 1
+  WeaponPoints: []
+--- !u!114 &114503219659102716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335445816159724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e92b89c90aac6e4c987c028065c5397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTripleShoot: 0
+  HasShield: 0
+  LifeCount: 3
+  _laserPrefab: {fileID: 1934956472639920, guid: 649fc799b1c11d74fa764d2297c7006d,
+    type: 2}
+  _Explosion: {fileID: 1005465752158134, guid: e259c19bf0b326f4f98fb42f9e54d255, type: 2}
+  _Shield: {fileID: 1306322757580536, guid: c172650b2f155c249ad538319ea9e433, type: 2}
+  speed: 5

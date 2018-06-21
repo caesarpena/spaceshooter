@@ -1,0 +1,30 @@
+Stellar Sprites
+
+Drag prefabs from "resources" folder into scene or Instantiate them at runtime.  That's really it.  Stellar Sprites doesn't handle any gameplay mechanics, only sprite generation and the few demo scripts provided.
+
+Additonal Notes:
+	
+	Sorting Layers - For the included demo scenes to work properly, you will want to setup your sorting layers in this order:
+		
+		Default
+		Background
+		Starfield
+		Blackhole
+		Sun
+		Cloud
+		Planet
+		Moon
+		Station
+		Asteroid
+		Ship
+		UI
+
+Scott
+swojtowicz@gmail.com
+
+
+
+***********
+Source Code
+***********
+I am very aware that the included sprite generating code is not optimized.
